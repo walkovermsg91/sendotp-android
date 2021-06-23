@@ -22,7 +22,7 @@ Just add below dependency in project's app level build.gradle file
 
     dependencies {
     ...
-     implementation 'com.github.walkovermsg91:walkover-sendOTP:1.0.3'
+     implementation 'com.github.walkovermsg91:walkover-sendOTP:1.0.7'
     ...
     }
 
@@ -77,7 +77,7 @@ After login at [MSG91](https://control.msg91.com/) </i> follow below steps to ge
         @Override
       public void onCreate() {
                super.onCreate();
-              SendOTP.initializeApp(this, "your DLT_TE_ID here");        //initialization
+              SendOTP.initializeApp(this,"AUTH_KEY" ,"your DLT_TE_ID here");        //initialization
       }
     }
 

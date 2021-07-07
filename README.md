@@ -22,7 +22,7 @@ Just add below dependency in project's app level build.gradle file
 
     dependencies {
     ...
-     implementation 'com.github.walkovermsg91:walkover-sendOTP:1.0.9'
+     implementation 'com.github.walkovermsg91:walkover-sendOTP:1.1.1'
     ...
     }
 

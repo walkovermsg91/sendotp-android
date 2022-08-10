@@ -6,7 +6,7 @@
 SendOTP Android Sdk!
 ===================
 ## For Androidx and Above use this library and [for older sdk 28 and blow see here](https://github.com/MSG91/sendotp-android/tree/version_1.2)
-**This Library Supports Androidx and older versions up to (SDK-16):**
+**This Library Supports Androidx and older versions from (SDK-16) to latest (SDK-32):**
 
 The  **SendOtp** Verification SDK makes verifying phone numbers easy. SDK supports the verification of phone numbers via **SMS & Calls**.
 
@@ -22,7 +22,8 @@ Just add below dependency in project's app level build.gradle file
 
     dependencies {
     ...
-     implementation 'com.github.walkovermsg91:walkover-sendOTP:1.1.1'
+        implementation 'com.github.walkovermsg91:walkover-sendOTP:1.1.8'
+        implementation 'com.squareup.okhttp3:okhttp:4.9.0' //Required for support
     ...
     }
 
@@ -52,7 +53,7 @@ grab via Ivy:
     <dependency>
     	    <groupId>com.github.walkovermsg91</groupId>
     	    <artifactId>walkover-sendOTP</artifactId>
-    	    <version>Tag</version>
+    	    <version>1.1.8</version>
     	</dependency>
 
 > -Login or create account at [MSG91]([https://control.msg91.com/signup/sendotp](https://control.msg91.com/signup/sendotp)) to use sendOTP services.
@@ -77,7 +78,7 @@ After login at [MSG91](https://control.msg91.com/) </i> follow below steps to ge
         @Override
       public void onCreate() {
                super.onCreate();
-              SendOTP.initializeApp(this,"AUTH_KEY" ,"your DLT_TE_ID here");        //initialization
+              SendOTP.initializeApp(this,"AUTH_KEY" ,"your template id here");        //initialization
       }
     }
 
@@ -128,7 +129,7 @@ manually **verifying OTP**
 **resend OTP** by voice or text .
 
     SendOTP.getInstance().getTrigger().resend(RetryType.VOICE);
-   **OR**
+**OR**
 
 
     SendOTP.getInstance().getTrigger().resend(RetryType.TEXT);
@@ -182,7 +183,7 @@ Optional Parameters
 License
 =======
 
-    Copyright 2020 MSG91
+    Copyright 2022 MSG91
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

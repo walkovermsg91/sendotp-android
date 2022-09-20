@@ -22,7 +22,7 @@ Just add below dependency in project's app level build.gradle file
 
     dependencies {
     ...
-        implementation 'com.github.walkovermsg91:walkover-sendOTP:1.1.8'
+        implementation 'com.github.walkovermsg91:walkover-sendOTP:1.2.1'
         implementation 'com.squareup.okhttp3:okhttp:4.9.0' //Required for support
     ...
     }
@@ -53,7 +53,7 @@ grab via Ivy:
     <dependency>
     	    <groupId>com.github.walkovermsg91</groupId>
     	    <artifactId>walkover-sendOTP</artifactId>
-    	    <version>1.1.8</version>
+    	    <version>1.2.1</version>
     	</dependency>
 
 > -Login or create account at [MSG91]([https://control.msg91.com/signup/sendotp](https://control.msg91.com/signup/sendotp)) to use sendOTP services.

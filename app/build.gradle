@@ -22,7 +22,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.walkovermsg91:walkover-sendOTP:1.1.8'
+    implementation 'com.github.walkovermsg91:walkover-sendOTP:1.2.1'
     implementation 'com.squareup.okhttp3:okhttp:4.9.0'
 //    implementation'com.googlecode.libphonenumber:libphonenumber:8.11.3'
 
